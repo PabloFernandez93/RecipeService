@@ -1,0 +1,24 @@
+<div class="recipe" *ngFor="let recipe of recipes; let i = index">
+  <img src="{{ recipe.thumbnail }}" alt="Bild konnte nicht geladen werden" />
+  <h3>{{ recipe.title }}</h3>
+  <h5>Zutaten:</h5>
+  <p>{{ recipe.ingredients }}</p>
+  <a href="{{ recipe.href }}">Hier gehts zum Rezept.</a>
+  <button (click)="deleteRecipe(i)">Löschen</button>
+</div>
+
+<div class="addRecipe">
+  <label for="title">Titel:</label>
+  <input type="text" id="title" #title required />
+
+  <label for="href">Link zum Rezept:</label>
+  <input type="text" id="href" #href required />
+
+  <label for="ingredients">Zutaten:</label>
+  <input type="text" id="ingredients" #ingredients required />
+
+  <label for="thumbnail">Link zum Bild</label>
+  <input type="text" id="thumbnail" #thumbnail required />
+
+  <button (click)="saveRecipe(title.value, href.value, ingredients.value, thumbnail.value)">Speichern</button>
+</div>

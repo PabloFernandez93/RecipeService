@@ -1,0 +1,41 @@
+div {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    max-width: 200px;
+    height: 385px;
+    text-align: center;
+    display: inline-block;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    vertical-align: top;
+}
+
+.recipe {
+    background-color: antiquewhite;
+    opacity: 0.85;
+}
+
+.recipe:hover {
+    opacity: 1;
+}
+
+img {
+    max-width: 100px;
+}
+
+.addRecipe {
+    background-color: lightgray;
+}
+
+.addRecipe input {
+    margin: 10px 0;
+    padding: 2px 5px;
+}
+
+button {
+    font-family: inherit;
+    font-size: 16px;
+    padding: 6px;
+    margin: 10px 0 0 0;
+    border-radius: 8px;
+}
